@@ -45,11 +45,9 @@ export class CalculatorKcalComponent implements OnInit {
     if (this.genre === 'm') {
       this.kal = 10 * this.weight + 6.25 * this.height - 5 * this.age + 5;
       this.kal = parseInt(this.kal.toFixed());
-      console.log('Si eres Hombre', this.kal);
     } else {
       this.kal = 10 * this.weight + 6.25 * this.height - 5 * this.age - 161;
       this.kal = parseInt(this.kal.toFixed());
-      console.log('Si eres Mujer', this.kal);
     }
 
     if (this.activity === 'sedentario') {
